@@ -6,7 +6,8 @@
 import SwiftUI
 
 struct SignInView: View {
-    @EnvironmentObject var controller: AuthenticationController
+    @State private var email = ""
+    @State private var shouldConfirmSignIn = false
     
     var body: some View {
         NavigationView {
@@ -14,13 +15,21 @@ struct SignInView: View {
                 
                 TextField(
                     "e-mail",
-                    text: $controller.email)
+                    text: $email)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
                 .keyboardType(.emailAddress)
                 
-                NavigationLink(destination: ConfirmSignInView()) {
+                Button {
+                    shouldConfirmSignIn = true
+                } label: {
                     Text("Continue")
+                }
+                
+                NavigationLink(isActive: $shouldConfirmSignIn) {
+                    ConfirmSignInView(email: email)
+                } label: {
+                    EmptyView()
                 }
                 
                 

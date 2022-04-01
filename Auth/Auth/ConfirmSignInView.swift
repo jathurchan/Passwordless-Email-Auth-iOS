@@ -6,32 +6,32 @@
 import SwiftUI
 
 struct ConfirmSignInView: View {
-    @EnvironmentObject var controller: AuthenticationController
+    @State var email: String
+    @State private var confirmationCode = ""
+    @State private var isSignedIn = false
     
     var body: some View {
         VStack{
             
-            Text(controller.email)
+            Text(email)
             
             SecureField(
             "Confirmation Code",
-            text: $controller.confirmationCode)
+            text: $confirmationCode) {
+                isSignedIn = true
+            }
             
-            NavigationLink(destination: HomeView()) {
-                Text("Confirm")
+            NavigationLink(isActive: $isSignedIn)   {
+                HomeView()
+            } label: {
+                EmptyView()
             }
             
             
         }
         .padding()
         .onAppear() {
-            controller.signIn()
+            
         }
-    }
-}
-
-struct ConfirmSignInView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConfirmSignInView()
     }
 }
