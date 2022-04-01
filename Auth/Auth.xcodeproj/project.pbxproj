@@ -17,7 +17,7 @@
 		4BE2597827F5EF0100F997A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE2597727F5EF0100F997A5 /* Preview Assets.xcassets */; };
 		4BE2597F27F5EF1B00F997A5 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2597E27F5EF1B00F997A5 /* SignInView.swift */; };
 		4BE2598127F5EF2700F997A5 /* ConfirmSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2598027F5EF2700F997A5 /* ConfirmSignInView.swift */; };
-		4BE2598327F5EF7400F997A5 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2598227F5EF7400F997A5 /* AuthenticationController.swift */; };
+		4BE2598327F5EF7400F997A5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2598227F5EF7400F997A5 /* AuthenticationViewModel.swift */; };
 		4BE2598527F5F93100F997A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2598427F5F93100F997A5 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		4BE2597727F5EF0100F997A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BE2597E27F5EF1B00F997A5 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		4BE2598027F5EF2700F997A5 /* ConfirmSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignInView.swift; sourceTree = "<group>"; };
-		4BE2598227F5EF7400F997A5 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		4BE2598227F5EF7400F997A5 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		4BE2598427F5F93100F997A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +73,7 @@
 				4BE2597E27F5EF1B00F997A5 /* SignInView.swift */,
 				4BE2598027F5EF2700F997A5 /* ConfirmSignInView.swift */,
 				4BE2598427F5F93100F997A5 /* HomeView.swift */,
-				4BE2598227F5EF7400F997A5 /* AuthenticationController.swift */,
+				4BE2598227F5EF7400F997A5 /* AuthenticationViewModel.swift */,
 				4BE2597427F5EF0100F997A5 /* Assets.xcassets */,
 				4BE2597627F5EF0100F997A5 /* Preview Content */,
 			);
@@ -171,7 +171,7 @@
 				4BE2597327F5EF0000F997A5 /* ContentView.swift in Sources */,
 				4BE2597127F5EF0000F997A5 /* AuthApp.swift in Sources */,
 				4BE2598527F5F93100F997A5 /* HomeView.swift in Sources */,
-				4BE2598327F5EF7400F997A5 /* AuthenticationController.swift in Sources */,
+				4BE2598327F5EF7400F997A5 /* AuthenticationViewModel.swift in Sources */,
 				4BE2598127F5EF2700F997A5 /* ConfirmSignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
